@@ -1,0 +1,49 @@
+/* /html/fakta.html */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 500px;
+  margin: auto;
+}
+html {
+  font-family: cursive;
+}
+header {
+  text-align: center;
+  letter-spacing: 1px;
+  height: 8em;
+  padding: 2em 10%;
+
+}
+header h1 {
+  display: inline;
+  text-align: center;
+}
+header img {
+ width: 40px;
+ max-height: 20px;
+}
+ol {
+  list-style-type: none;
+}
+main h2,h3,h4 {
+  text-align: center;
+}
+main #bilder_titel {
+  margin-top: 100px;
+}
+main .bild {
+  max-height: 500px;
+  margin: auto;
+  display: block;
+}
+main section {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#gurka {
+  width: 400px;
+}

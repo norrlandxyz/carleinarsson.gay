@@ -1,5 +1,6 @@
 /* Index.html */
 * {
+  background-image: url('../img/carl-gurka.jpg');
   margin: 0;
   padding: 0;
 }
@@ -9,4 +10,7 @@ body {
 }
 html {
   font-family: cursive;
+}
+h1 {
+  text-align: center;
 }

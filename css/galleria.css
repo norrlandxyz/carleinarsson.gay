@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: auto;
+  }
+  html {
+    font-family: cursive;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .bild {
+    text-align: center;
+    position: relative;
+  }
+
+  .top-center {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

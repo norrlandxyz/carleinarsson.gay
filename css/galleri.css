@@ -22,7 +22,7 @@
   }
   nav ol li a:hover {
     text-decoration: none;
-    background-image: url(/img/carl-mörker.jpg);
+    background-image: url(../img/carl-mörker.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: 0.5s;

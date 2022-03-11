@@ -2,6 +2,30 @@
     margin: 0;
     padding: 0;
   }
+  nav {
+    position: absolute;
+    margin-bottom: 25px;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ol li {
+    padding: 20px;
+  }
+  nav ol li a {
+    text-decoration: none;
+  }
+  nav ol li a:hover {
+    text-decoration: none;
+    background-color: #4053e7;
+    transition-duration: 0.5s;
+    color: white;
+  }
   body {
     margin: auto;
   }

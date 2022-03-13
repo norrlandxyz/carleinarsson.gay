@@ -1,5 +1,5 @@
 body {
-    width: 500px;
+    width: 600px;
     margin: auto;
   }
   html {
@@ -24,4 +24,15 @@ nav {
   }
   h1 {
     text-align: center;
+  }
+
+  pre {
+    background: white;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 1em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    max-width: 600px;
+    margin: auto;
   }

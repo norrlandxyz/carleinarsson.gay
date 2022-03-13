@@ -33,12 +33,64 @@
         </p>
         <img src="../media/matrix.png" width="500px">
         <h1>Installera en matrix klient</h1>
-        <p>Matrix har väldigt många olika <a href="https://matrix.org/clients">klienter</a> man kan välja mellan.
-        Men för nybörjare för både dig och Carl så rekommenderas Element som en bra klient att börja med.</p>
+        <p>Matrix har väldigt många olika <a target="_blank" href="https://matrix.org/clients">klienter</a> man kan välja mellan.
+        Men för nybörjare för både dig och Carl så rekommenderas <a target="_blank" href="https://element.io/">Element</a> som en bra klient att börja med.
+        Element finns både på mobil, dator och i webben, du kan ladda ner Element på Mac, Windows och Linux via denna <a target="_blank" href="https://element.io/get-started#download">länk</a>.</p>
+
+        <p>För att installera Element på Windows trycker du på denna <a target="_blank" href="https://packages.riot.im/desktop/install/win32/x64/Element%20Setup.exe">länk</a>.
+        Efter att du har laddat ner Element.exe filen så dubbel klickar du på den. Nu när Element öppnas kommer två alternativ upp, det ena är att logga in och om du redan har ett konto kan du då
+        logga in igen, det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en annan server istället för Matrix egna servrar eftersom de kan vara väldigt laggiga 
+        men också för att man vill decentralisera nätverket mer. Här finns en <a target="_blank" href="https://joinmatrix.org/servers/">länk</a> med massor av olika hemservrar du kan använda dig av. Men 
+        om du inte orkar kolla igenom den så kan du direkt använda dig av: matrix.norrland.xyz
+        </p>
+        <p>Du kan även installera Element på Windows via "winget" vilket är Windows egna pakethanterare. Detta gör du via att öppna konsolen och skriver in detta:</p>
+        <pre><code>winget install -e --id Element.Element</code></pre>
+
+        <p>Ska du installera Element på Linux kan du använda dig utav din pakethanterare. Beroende på vilken Linux distrubition du köra på så har du olika pakethanterare.
+            Nedanför finns guider på hur du installerar Element på olika Linux distrubitioner.            
+        </p>
+        <p>Debian baserade distrubitioner:</p>
+<pre><code>sudo apt install -y wget apt-transport-https
+
+sudo wget -O /usr/share/keyrings/element-io-archive-keyring.gpg https://packages.element.io/debian/element-io-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/element-io-archive-keyring.gpg] https://packages.element.io/debian/ default main" | sudo tee /etc/apt/sources.list.d/element-io.list
+
+
+sudo apt update
+
+sudo apt install element-desktop
+</code></pre>
+
+    <p>Fedora och CentOS system:</p>
+<pre><code>sudo dnf install -y dnf-plugins-core distribution-gpg-keys
+    ‍
+sudo dnf copr enable taw/element
+    ‍
+sudo dnf install -y element --refresh
+</code></pre>
+
+<p>Arch baserade distrubitioner:</p>
+<pre><code>sudo pacman -Syu
+    ‍
+sudo pacman -S element-desktop
+</code></pre>
     </div>
 
     <div class="mumble">
+        <h1>Mumble guide</h1>
+        <p><a target="_blank" href="https://www.mumble.info/">Mumble</a> är ett öppet källkods program som tillåter dig att prata med dina vänner i realtid. Mumble har låg latenstid, hög kvalitéts ljud 
+            och enkrypterad kommunikation. Mumble går även att installera på de flesta operativsystem det vill säga Windows, Mac och Linux.
+        </p>
 
+        <h1>Installera Mumble</h1>
+        <p>För att installera Mumble med Windows så behöver du ladda ner programmet <a target="_blank" href="https://www.mumble.info/downloads/">härifrån</a> klicka på "Windows client" för att ladda ner 
+            Mumble. När du laddat ner det är det bara att dubbelklicka på programmet och när det öppnas bör du även klicka dig igenom "Audio Wizard" konfigurationen. För att gå med i en server
+            så är det bara att klicka på "connect" uppe i det vänstra hörnet. Där kan du välja att lägga in en server t.ex så kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new..." i 
+            address fältet skriver du norrland.xyz, portnummret kan du låta stå och tillsist skriver du in ditt användarnamn.
+        </p>
+        <p>Du kan även installera Mumble med Windows pakethanterare via:</p>
+        <pre><code>winget install -e --id Mumble.Mumble</code></pre>
     </div>
 
 

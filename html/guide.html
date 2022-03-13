@@ -21,7 +21,7 @@
         <h2>Handbok ägnad åt Carl</h2>
         <p>Pågrund av Carls bristande kunskaper inom teknologi har vi skrivit en enkel handbok för han (eller andra) att följa.
             Nedanför finns guides på hur man installerar och konfigurerar
-            öppen källkodsprogramvara. Eftersom programvaran använder öppen källkod kan de optimeras för att använda oroligt lite ram. Detta är perfekt om man har Carls dator.</p>
+            öppen källkodsprogramvara. Eftersom programvaran använder öppen källkod kan de optimeras för att använda otroligt lite ram. Detta är perfekt om man har en lika dålig dator som Carls.</p>
         <p><b>Bokindex:</b></p>
         <ol>
           <li><a href=#matrix>Matrix Guide</a></li>
@@ -43,10 +43,7 @@
         Element finns både på Android, IOS, Mac, Windows, Linux och i webben.</p>
         <h4>Windows</h4>
         <p>För att <a target="_blank" href="https://element.io/get-started#download">ladda ner Element</a> på Windows trycker du först på bifogad länk.
-        Efter att du har laddat ner Element.exe filen så dubbel klickar du på den. Nu när Element öppnas kommer två alternativ upp, det ena är att logga in och om du redan har ett konto kan du då
-        logga in igen. Det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en <a target="_blank" href="https://joinmatrix.org/servers/">annan hemserver</a> än matrix.org (standard). Detta är eftersom den kan vara överbelastad
-        men också för att man vill decentralisera nätverket mer. Det finns massor av olika hemservrar du kan välja mellan men
-        om du inte orkar kolla igenom listan så kan du direkt använda dig av: "matrix.norrland.xyz". Komm ihåg att ditt konto är kopplat till din hemserver.
+        Efter att du har laddat ner Element.exe filen så dubbel klickar du på den.
         </p>
         <p>Du kan även installera Element på Windows via <b>"winget"</b> vilket är Windows egna pakethanterare. Detta gör du genom att öppna konsolen (Superkey + R, skriv CMD och tryck enter) och skriv in detta kommand:</p>
         <pre><code>winget install -e --id Element.Element</code></pre>
@@ -79,6 +76,13 @@ sudo dnf copr enable taw/element
     ‍
 sudo dnf install -y element --refresh
 </code></pre>
+
+  <h2>Konfigurera Element</h2>
+  <p>När Element öppnas kommer två alternativ upp, det ena är att logga in och om du redan har ett konto kan du då
+  logga in igen. Det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en <a target="_blank" href="https://joinmatrix.org/servers/">annan hemserver</a> än matrix.org (standard). Detta är eftersom den kan vara överbelastad
+  men också för att man vill decentralisera nätverket mer. Det finns massor av olika hemservrar du kan välja mellan men
+  om du inte orkar kolla igenom listan så kan du direkt använda dig av: "matrix.norrland.xyz". Kom ihåg att ditt konto är kopplat till din hemserver.
+  </p>
 </section>
 
     <section ID="mumble">
@@ -91,9 +95,7 @@ sudo dnf install -y element --refresh
         <p>Eftersom Mumble har öppen källkod finns det några alternativa <a href="https://wiki.mumble.info/wiki/3rd_Party_Applications#Clients">Mumble-klienter</a> men allmänt så använder man sig av den officiella klienten vid namn "Mumble".</p>
         <h4>Windows</h4>
         <p>För att installera Mumble med Windows så behöver du först <a target="_blank" href="https://www.mumble.info/downloads/">ladda ner programmet</a> genom bifogad länk. Klicka på "Windows client" för att ladda ner
-            Mumble. När nerladdningen är klar är det bara att dubbelklicka på programmet. Sedan när det öppnas bör du även klicka dig igenom "Audio Wizard" konfigurationen. För att gå in i en server
-            behöver du bara klicka på "connect" uppe i det vänstra hörnet. Där kan du välja att lägga till en server. T.ex så kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new...". I
-            address fältet skriver du sedan norrland.xyz. Portnummret kan du låta stå och tillsist skriver du in ditt användarnamn.
+            Mumble. När nerladdningen är klar är det bara att dubbelklicka på programmet. Efter att du dubbelklickat så bör programmet ha installerat.
         </p>
         <p>Du kan även installera Mumble med Windows pakethanterare via:</p>
         <pre><code>winget install -e --id Mumble.Mumble</code></pre>
@@ -124,6 +126,13 @@ sudo pacman -S mumble</code></pre>
       <pre><code>sudo dnf install -y dnf-plugins-core distribution-gpg-keys
 
 sudo dnf install mumble</code></pre>
+
+        <h2>Konfigurera Mumble</h2>
+        <p>När du öppnar Mumble för första gången bör "Audio Wizard" rutan öppnas gör den inte det kan du trycka på "Configure" längst upp. Det rekommenderas starkt att du går igenom
+          alla steg i "Audio Wizard" för att få ultimat ljudkvalité när du pratar med dina vänner. För att gå in i en server behöver du bara klicka på "connect" uppe i det vänstra hörnet. 
+          Där kan du välja att lägga till en server t.ex kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new...". I address fältet skriver du sedan norrland.xyz. 
+          Portnummret är 64738 och tillsist skriver du in ditt användarnamn.
+        </p>
     </section>
     <footer>
       <a href="https://github.com/plsrobin/carleinarsson.gay" target="_blank">GNU General Public License v3.0</a>

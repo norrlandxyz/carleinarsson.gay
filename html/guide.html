@@ -5,51 +5,56 @@
     <title>Carl Einarsson Fanpage</title>
     <link rel="stylesheet" href="../css/guide.css">
   </head>
-  <body>
+  <header>
     <h1>🔥Carl Einarsson Fanpage🔥</h1>
-
     <nav>
       <ol>
         <li><a href="../index.html">Hem</a></li>
-        <li><a href="fakta.html">Fakta</a></li>
-        <li><a href="galleri.html">Galleri</a></li>
-        <li><a href="guide.html">Guide</a></li>
+        <li><a href="../html/fakta.html">Fakta</a></li>
+        <li><a href="../html/galleri.html">Galleri</a></li>
+        <li><a href="../html/guide.html">Handbok</a></li>
       </ol>
     </nav>
-
-    <div class="main">
-        <h1>Guides ägnade åt Carl</h1>
-        <p>Pågrund av Carls bristande kunskaper i teknologi har vi gjort en simpel guide som alla kan följa. 
+  </header>
+  <body>
+    <main>
+        <h2>Handbok ägnad åt Carl</h2>
+        <p>Pågrund av Carls bristande kunskaper inom teknologi har vi skrivit en enkel handbok för han (eller andra) att följa.
             Nedanför finns guides på hur man installerar och konfigurerar
-            öppna källkods program som kräver otroligt lite ram</p>
-    </div>
+            öppen källkodsprogramvara. Eftersom programvaran använder öppen källkod kan de optimeras för att använda oroligt lite ram. Detta är perfekt om man har Carls dator.</p>
+        <p><b>Bokindex:</b></p>
+        <ol>
+          <li><a href=#matrix>Matrix Guide</a></li>
+          <li><a href=#mumble>Mumble Guide</a></li>
+        </ol>
+    </main>
 
-    <div class="matrix">
-        <h1>Matrix guide</h1>
-        <p>Matrix är en öppen källkods standard som är decentraliserad och tillåter dig att skicka ände till ände krypterade meddelanden.
-           Matrix i sig är inget program som du kan skicka meddelanden i utan du måste ha en klient som använder 
-           sig utav matrix standarden för att skicka i. Matrix liknar melj väldigt mycket eftersom du kan skicka meddelanden 
-           till olika operatörer oavsett vilken hemserver du har. 
+    <section ID="matrix">
+        <h2>Matrix guide</h2>
+        <p>Matrix är en öppen standard som tillåter dig att skicka ände-till-ände krypterade meddelanden på ett decentraliserat sätt.
+           Matrix är i sig inget program. Istället måste man använda en klient som använder
+           sig utav matrixprotokollstandarden. Matrix liknar melj väldigt mycket eftersom du kan skicka meddelanden
+           till olika operatörer oavsett vilken hemserver du använder. Däremot är mejl inte skapat för det moderna internetet och har inte samma säkerhetstänkande.
         </p>
         <img src="../media/matrix.png" width="500px">
-        <h1>Installera en matrix klient</h1>
+        <h3>Installera en Matrix klient</h3>
         <p>Matrix har väldigt många olika <a target="_blank" href="https://matrix.org/clients">klienter</a> man kan välja mellan.
-        Men för nybörjare för både dig och Carl så rekommenderas <a target="_blank" href="https://element.io/">Element</a> som en bra klient att börja med.
-        Element finns både på mobil, dator och i webben, du kan ladda ner Element på Mac, Windows och Linux via denna <a target="_blank" href="https://element.io/get-started#download">länk</a>.</p>
-
-        <p>För att installera Element på Windows trycker du på denna <a target="_blank" href="https://packages.riot.im/desktop/install/win32/x64/Element%20Setup.exe">länk</a>.
+        För nybörjare som både dig och Carl så rekommenderar vi <a target="_blank" href="https://element.io/">Element</a> som en bra första klient.
+        Element finns både på Android, IOS, Mac, Windows, Linux och i webben.</p>
+        <h4>Windows</h4>
+        <p>För att <a target="_blank" href="https://element.io/get-started#download">ladda ner Element</a> på Windows trycker du först på bifogad länk.
         Efter att du har laddat ner Element.exe filen så dubbel klickar du på den. Nu när Element öppnas kommer två alternativ upp, det ena är att logga in och om du redan har ett konto kan du då
-        logga in igen, det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en annan server istället för Matrix egna servrar eftersom de kan vara väldigt laggiga 
-        men också för att man vill decentralisera nätverket mer. Här finns en <a target="_blank" href="https://joinmatrix.org/servers/">länk</a> med massor av olika hemservrar du kan använda dig av. Men 
-        om du inte orkar kolla igenom den så kan du direkt använda dig av: matrix.norrland.xyz
+        logga in igen. Det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en <a target="_blank" href="https://joinmatrix.org/servers/">annan hemserver</a> än matrix.org (standard). Detta är eftersom den kan vara överbelastad
+        men också för att man vill decentralisera nätverket mer. Det finns massor av olika hemservrar du kan välja mellan men
+        om du inte orkar kolla igenom listan så kan du direkt använda dig av: "matrix.norrland.xyz". Komm ihåg att ditt konto är kopplat till din hemserver.
         </p>
-        <p>Du kan även installera Element på Windows via "winget" vilket är Windows egna pakethanterare. Detta gör du via att öppna konsolen och skriver in detta:</p>
+        <p>Du kan även installera Element på Windows via <b>"winget"</b> vilket är Windows egna pakethanterare. Detta gör du genom att öppna konsolen (Superkey + R, skriv CMD och tryck enter) och skriv in detta kommand:</p>
         <pre><code>winget install -e --id Element.Element</code></pre>
-
-        <p>Ska du installera Element på Linux kan du använda dig utav din pakethanterare. Beroende på vilken Linux distrubition du köra på så har du olika pakethanterare.
-            Nedanför finns guider på hur du installerar Element på olika Linux distrubitioner.            
+        <h4>Linux</h4>
+        <p>Ska du installera Element på Linux kan du använda dig utav din specifika pakethanterare. Beroende på vilken Linux distribution din dator kör så har du olika pakethanterare.
+            Nedanför finns guider på hur du installerar Element på olika Linux distrubitioner.
         </p>
-        <p>Debian baserade distrubitioner:</p>
+        <p>Debian baserade distributioner: (Som t.ex Ubuntu, Pop_OS!)</p>
 <pre><code>sudo apt install -y wget apt-transport-https
 
 sudo wget -O /usr/share/keyrings/element-io-archive-keyring.gpg https://packages.element.io/debian/element-io-archive-keyring.gpg
@@ -62,6 +67,11 @@ sudo apt update
 sudo apt install element-desktop
 </code></pre>
 
+<p>Arch baserade distributioner: (Som t.ex Manjaro, EndeavourOS)</p>
+<pre><code>sudo pacman -Syu
+    ‍
+sudo pacman -S element-desktop
+</code></pre>
     <p>Fedora och CentOS system:</p>
 <pre><code>sudo dnf install -y dnf-plugins-core distribution-gpg-keys
     ‍
@@ -69,30 +79,27 @@ sudo dnf copr enable taw/element
     ‍
 sudo dnf install -y element --refresh
 </code></pre>
+</section>
 
-<p>Arch baserade distrubitioner:</p>
-<pre><code>sudo pacman -Syu
-    ‍
-sudo pacman -S element-desktop
-</code></pre>
-    </div>
-
-    <div class="mumble">
-        <h1>Mumble guide</h1>
-        <p><a target="_blank" href="https://www.mumble.info/">Mumble</a> är ett öppet källkods program som tillåter dig att prata med dina vänner i realtid. Mumble har låg latenstid, hög kvalitéts ljud 
-            och enkrypterad kommunikation. Mumble går även att installera på de flesta operativsystem det vill säga Windows, Mac och Linux.
+    <section ID="mumble">
+        <h2>Mumble guide</h2>
+        <p><a target="_blank" href="https://www.mumble.info/">Mumble</a> är ett öppet källkodsprogram som tillåter dig att prata med dina vänner i realtid. Mumble har låg latenstid, hög ljudkvalité
+            och enkrypterad kommunikation. Mumble går även att installera på de flesta operativsystem, det vill säga Windows, Mac, Linux och Android (<a href="https://f-droid.org/en/packages/se.lublin.mumla/">mumla</a>).
         </p>
 
-        <h1>Installera Mumble</h1>
-        <p>För att installera Mumble med Windows så behöver du ladda ner programmet <a target="_blank" href="https://www.mumble.info/downloads/">härifrån</a> klicka på "Windows client" för att ladda ner 
-            Mumble. När du laddat ner det är det bara att dubbelklicka på programmet och när det öppnas bör du även klicka dig igenom "Audio Wizard" konfigurationen. För att gå med i en server
-            så är det bara att klicka på "connect" uppe i det vänstra hörnet. Där kan du välja att lägga in en server t.ex så kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new..." i 
-            address fältet skriver du norrland.xyz, portnummret kan du låta stå och tillsist skriver du in ditt användarnamn.
+        <h3>Installera Mumble</h3>
+        <p>Eftersom Mumble har öppen källkod finns det några alternativa <a href="https://wiki.mumble.info/wiki/3rd_Party_Applications#Clients">Mumble-klienter</a> men allmänt så använder man sig av den officiella klienten vid namn "Mumble".</p>
+        <h4>Windows</h4>
+        <p>För att installera Mumble med Windows så behöver du först <a target="_blank" href="https://www.mumble.info/downloads/">ladda ner programmet</a> genom bifogad länk. Klicka på "Windows client" för att ladda ner
+            Mumble. När nerladdningen är klar är det bara att dubbelklicka på programmet. Sedan när det öppnas bör du även klicka dig igenom "Audio Wizard" konfigurationen. För att gå in i en server
+            behöver du bara klicka på "connect" uppe i det vänstra hörnet. Där kan du välja att lägga till en server. T.ex så kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new...". I
+            address fältet skriver du sedan norrland.xyz. Portnummret kan du låta stå och tillsist skriver du in ditt användarnamn.
         </p>
         <p>Du kan även installera Mumble med Windows pakethanterare via:</p>
         <pre><code>winget install -e --id Mumble.Mumble</code></pre>
-    </div>
-
-
+    </section>
+    <footer>
+      <a href="https://github.com/plsrobin/carleinarsson.gay" target="_blank">GNU General Public License v3.0</a>
+    </footer>
     </body>
 </html>

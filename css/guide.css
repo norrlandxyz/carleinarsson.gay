@@ -1,0 +1,27 @@
+body {
+    width: 500px;
+    margin: auto;
+  }
+  html {
+    font-family: cursive;
+  }
+nav {
+    margin-bottom: 25px;
+  }
+  nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ol li a {
+    text-decoration: none;
+  }
+  nav ol li a:hover {
+    text-decoration: none;
+    background-color: #4053e7;
+    transition-duration: 0.5s;
+    color: white;
+  }
+  h1 {
+    text-align: center;
+  }

@@ -21,7 +21,7 @@
         <h2>Handbok ägnad åt Carl</h2>
         <p>Pågrund av Carls bristande kunskaper inom teknologi har vi skrivit en enkel handbok för han (eller andra) att följa.
             Nedanför finns guides på hur man installerar och konfigurerar
-            öppen källkodsprogramvara. Eftersom programvaran använder öppen källkod kan de optimeras för att använda otroligt lite ram. Detta är perfekt om man har en lika dålig dator som Carls.</p>
+            öppen källkodsprogramvara. Eftersom programvaran använder öppen källkod kan de optimeras för att använda otroligt lite ram. Detta är perfekt om man har en lika dålig dator som Carls. Vid behov av hjälp med denna handbok kan ni kontakta antingen <a href="https://matrix.to/#/@joakim:norrland.xyz" target="_blank">@joakim:norrland.xyz</a> eller <a href="https://matrix.to/#/@robin:norrland.xyz" target="_blank">@robin:norrland.xyz</a>.</p>
         <p><b>Bokindex:</b></p>
         <ol>
           <li><a href=#matrix>Matrix Guide</a></li>
@@ -77,8 +77,8 @@ sudo dnf copr enable taw/element
 sudo dnf install -y element --refresh
 </code></pre>
 
-  <h2>Konfigurera Element</h2>
-  <p>När Element öppnas kommer två alternativ upp, det ena är att logga in och om du redan har ett konto kan du då
+  <h3>Konfigurera Element</h3>
+  <p>När Element öppnas kommer två alternativ upp. Det ena är att logga in och om du redan har ett konto kan du då
   logga in igen. Det andra alternativet är att du skapar ett konto. När du ska skapa ett konto bör du använda en <a target="_blank" href="https://joinmatrix.org/servers/">annan hemserver</a> än matrix.org (standard). Detta är eftersom den kan vara överbelastad
   men också för att man vill decentralisera nätverket mer. Det finns massor av olika hemservrar du kan välja mellan men
   om du inte orkar kolla igenom listan så kan du direkt använda dig av: "matrix.norrland.xyz". Kom ihåg att ditt konto är kopplat till din hemserver.
@@ -101,7 +101,7 @@ sudo dnf install -y element --refresh
         <pre><code>winget install -e --id Mumble.Mumble</code></pre>
         <h4>Linux</h4>
         <p>Ska du installera Mumble på Linux kan du använda dig utav din specifika pakethanterare. Beroende på vilken Linux distribution din dator kör så har du olika pakethanterare.
-            Nedanför finns guider på hur du installerar Element på olika Linux distrubitioner.
+            Nedanför finns guider på hur du installerar Mumble på olika Linux distrubitioner.
         </p>
         <p>Debian baserade distributioner:</p>
         <pre><code>sudo apt-get update
@@ -127,11 +127,11 @@ sudo pacman -S mumble</code></pre>
 
 sudo dnf install mumble</code></pre>
 
-        <h2>Konfigurera Mumble</h2>
-        <p>När du öppnar Mumble för första gången bör "Audio Wizard" rutan öppnas gör den inte det kan du trycka på "Configure" längst upp. Det rekommenderas starkt att du går igenom
-          alla steg i "Audio Wizard" för att få ultimat ljudkvalité när du pratar med dina vänner. För att gå in i en server behöver du bara klicka på "connect" uppe i det vänstra hörnet. 
-          Där kan du välja att lägga till en server t.ex kan du lägga till norrland.xyz. Detta gör du via att klicka "Add new...". I address fältet skriver du sedan norrland.xyz. 
-          Portnummret är 64738 och tillsist skriver du in ditt användarnamn.
+        <h3>Konfigurera Mumble</h3>
+        <p>När du öppnar Mumble för första gången bör "Audio Wizard" rutan öppna. Gör den inte det kan du trycka på "Configure" längst upp. Vi rekommenderas starkt att du går igenom
+          alla steg i "Audio Wizard" för att få din ultimata ljudkvalité när du pratar med dina vänner. För att gå in i en server behöver du bara klicka på "connect" uppe i det vänstra hörnet.
+          Där kan du välja att lägga till en server. T.ex kan du lägga till norrland.xyz. Detta gör du genom att klicka "Add new...". I addressfältet skriver du sedan norrland.xyz.
+          Portnummret är 64738 (standard) och tillsist skriver du in ditt användarnamn.
         </p>
     </section>
     <footer>

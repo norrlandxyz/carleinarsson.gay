@@ -34,8 +34,14 @@ html {
 h1 {
   text-align: center;
 }
+main img {
+  max-width: 300px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
 footer {
-  margin: 50px auto auto auto;
+  margin: 35px auto auto auto;
   text-align: center;
 }
 footer a {

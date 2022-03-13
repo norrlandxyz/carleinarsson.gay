@@ -97,6 +97,37 @@ sudo dnf install -y element --refresh
         </p>
         <p>Du kan även installera Mumble med Windows pakethanterare via:</p>
         <pre><code>winget install -e --id Mumble.Mumble</code></pre>
+        <h4>Linux</h4>
+        <p>Ska du installera Mumble på Linux kan du använda dig utav din specifika pakethanterare. Beroende på vilken Linux distribution din dator kör så har du olika pakethanterare.
+            Nedanför finns guider på hur du installerar Element på olika Linux distrubitioner.
+        </p>
+        <p>Debian baserade distributioner:</p>
+        <pre><code>sudo apt-get update
+
+sudo apt-get upgrade
+
+apt-get install mumble
+        </code></pre>
+        <p>Vissa Ubuntu distributioner:</p>
+        <pre><code>sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo add-apt-repository ppa:mumble/release
+
+sudo apt-get install mumble
+        </code></pre>
+
+        <p>Arch baserade distributioner: (Som t.ex Manjaro, EndeavourOS)</p>
+        <pre><code>sudo pacman -Syu
+
+sudo pacman -S mumble
+      </code></pre>
+      <p>Fedora och CentOS system:</p>
+      <pre><code>sudo dnf install -y dnf-plugins-core distribution-gpg-keys
+
+sudo dnf install mumble
+      </code></pre>
     </section>
     <footer>
       <a href="https://github.com/plsrobin/carleinarsson.gay" target="_blank">GNU General Public License v3.0</a>

@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
   }
+  html {
+    font-family: cursive;
+  }
   body {
     background-image: url('../img/trollhättan.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color:#6cf;
+    margin: auto;
   }
   nav {
     margin: auto;
@@ -28,20 +33,17 @@
     transition-duration: 0.5s;
     color: white;
   }
-  body {
-    margin: auto;
-  }
-  html {
-    font-family: cursive;
-  }
-  h1 {
+  h1, h2 {
     text-align: center;
   }
 
   div.gallery {
+    margin-top: 10000px;
     margin: 5px;
     gap: 10px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   div.bild{
     border: 1px solid #ccc;
@@ -62,7 +64,7 @@
     text-align: center;
   }
   footer {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
     background:#6cf;

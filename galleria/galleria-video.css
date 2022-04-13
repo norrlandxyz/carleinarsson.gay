@@ -30,25 +30,12 @@ body {
 html {
   font-family: cursive;
 }
-h1 {
+h1, h2 {
   text-align: center;
 }
-main img {
+main video {
   max-width: 300px;
   margin: auto;
   display: block;
   margin-top: 20px;
-}
-footer {
-  margin: 35px auto auto auto;
-  text-align: center;
-}
-footer a {
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: none;
-  background-color: #4053e7;
-  transition-duration: 0.5s;
-  color: white;
 }

@@ -38,8 +38,8 @@
   }
 
   div.gallery {
-    margin-top: 10000px;
-    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 35px;
     gap: 10px;
     display: flex;
     justify-content: center;
@@ -48,6 +48,7 @@
   div.bild{
     border: 1px solid #ccc;
     width: 10em;
+    background: rgba(102,204,255,0.8)
   }
 
   div.bild:hover {
